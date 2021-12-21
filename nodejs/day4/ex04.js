@@ -1,3 +1,4 @@
+//----------------------------------------------------------------------------------
 const app = require("./multiplecontentmodule");
 console.log(`This program was developed by ${app.developedBy} on ${app.developedOn}`);
 
