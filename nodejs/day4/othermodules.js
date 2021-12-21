@@ -21,4 +21,4 @@ console.log("the total memeory : "+(os.totalmem())/1024000000)
 
 ///////////////////table////////////////////
 var fakedata=require("./MOCK_DATA.json");
-//console.table(fakedata);
+console.table(fakedata);
