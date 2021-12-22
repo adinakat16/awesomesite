@@ -8,5 +8,4 @@ app.get('/registration',(req,res)=>res.sendFile(root+req.url+'.html'));
 app.get('/aboutus',(req,res)=>res.sendFile(root+req.url+'.html'));
 app.get('/contactus',(req,res)=>res.sendFile(root+req.url+'.html'));
 
-
 app.listen(1234,()=>console.log("server is runing on port 1234"))
