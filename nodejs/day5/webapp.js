@@ -4,5 +4,6 @@ const http=require('http');
 const fs= require('fs');
 
 http.createServer((req,res)=>{
-console.log(req.method);
+console.log(req);
+
 }).listen(1234)
