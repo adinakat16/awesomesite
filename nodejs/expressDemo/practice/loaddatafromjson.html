@@ -7,7 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Employye data</title>
     <style>
-       
+       p{
+           background-color: green;
+       }
     </style>
 </head>
 <body>
@@ -21,7 +23,6 @@
             <th>Gender</th>
             <th>option</th>
     </table>
-    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus placeat ipsum fugit cupiditate explicabo dolorum, voluptatem tempore ullam repellat amet temporibus fuga et laudantium pariatur asperiores? Necessitatibus quae earum alias.</div>
 
     <script>
         $('#getdata').click( ()=>{
@@ -47,16 +48,6 @@
                 // console.log("isit? "+ found(name))
                 // (data.fistname).findAll("")
             })
-            $().mouseleave(()=>{
-                $(this).css("background","reset")
-            })
-            $('div').css({"background-color": "red", "width": "200px", "height": "200px"});
-            $('div').mouseover(function(){
-                $(this).css("background-color","green")
-            });
-            $('div').mouseleave(function(){
-                $(this).css("background-color","red")
-            });
     </script>
     
 </body>
