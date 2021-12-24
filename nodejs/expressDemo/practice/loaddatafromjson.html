@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Employye data</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <button id='getdata'>get data</button>
+    <input type="text" id="name"><button id="filter">Filter it</button>
+    <table border='1'>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>option</th>
+    </table>
+    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus placeat ipsum fugit cupiditate explicabo dolorum, voluptatem tempore ullam repellat amet temporibus fuga et laudantium pariatur asperiores? Necessitatibus quae earum alias.</div>
+
+    <script>
+        $('#getdata').click( ()=>{
+            console.log("buttonpressed")
+            $.get('/emp',(data)=>{
+                data=JSON.parse(data);
+                //console.table(data);
+                $.each(data,(index,value)=>{
+                    $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                })
+            });
+        })
+        $("#filter").click(()=>{
+            var name = $("#name").val();
+            console.log("name is: "+ name);
+            
+            $.get('/empname',(data)=>{
+                console.log(data);
+                // data=data.filter(e=>e.first_name.includes(name))
+                
+                })
+                
+                // console.log("isit? "+ found(name))
+                // (data.fistname).findAll("")
+            })
+            $().mouseleave(()=>{
+                $(this).css("background","reset")
+            })
+            $('div').css({"background-color": "red", "width": "200px", "height": "200px"});
+            $('div').mouseover(function(){
+                $(this).css("background-color","green")
+            });
+            $('div').mouseleave(function(){
+                $(this).css("background-color","red")
+            });
+    </script>
+    
+</body>
+</html>
