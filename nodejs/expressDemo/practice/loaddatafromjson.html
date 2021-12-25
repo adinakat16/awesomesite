@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Employye data</title>
-    <style>
-       p{
-           background-color: green;
-       }
-    </style>
 </head>
+
 <body>
     <button id='getdata'>get data</button>
-    <!-- <form action="/empname" method="get"> -->
     <input type="text" id="name" name="name"><button type="submit" id="filter">Filter it</button>
-    <!-- </form> -->
     <table border='1'>
-            <th>Id</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Gender</th>
-            <th>option</th>
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>option</th>
     </table>
     <div></div>
 
     <script>
         let rdata;
-        $('#getdata').click( ()=>{
-            console.log("buttonpressed")
-            $.get('/emp',(data)=>{
-                
-                data=JSON.parse(data);
-                rdata=data;
-                //console.table(data);
-                $.each(data,(index,value)=>{
-                    
+        $('#getdata').click(() => {
+            $.get('/emp', (data) => {
+
+                data = JSON.parse(data); //convert string json to objectjson
+                rdata = data;             //making it availbale globally
+
+                //not to repeat data again while appending
+                //will remove rows greater than 0 index
+                $('table').find('tr:gt(0)').remove();
+
+                //append each row in table
+                $.each(data, (index, value) => {
                     $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
                 })
             });
         })
-        $('#filter').click(()=>{
-            let filldata=rdata.filter(e=>{
-                return e.first_name.includes($('#name').val());
-            })
-            // var filldata=rdata.filter((e)=>e.first_name.includes($('#name').val()));
-            console.log($('table').find('tr:gt(0)'))
-            $('table').find('tr:gt(0)').remove();
-            $.each(filldata,(index,value)=>{
-                $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
-            })
-            // $.get("/empname",{name:$('#name').val()},(err,data)=>{
-            //     $('div').html(typeof(data))
-            //     if(data=='success'){
-
-            //     }
+        $('#filter').click(() => {
+            // let filldata = rdata.filter(e => {
+            //     return e.first_name.includes($('#name').val());
             // })
+            // // var filldata=rdata.filter((e)=>e.first_name.includes($('#name').val()));
+            // console.log($('table').find('tr:lt(2)'))
+            // $('table').find('tr:gt(0)').remove();
+            // $.each(filldata, (index, value) => {
+            //     $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+            // })
+            $.get("/empname", { name: $('#name').val() }).done(function (data) {
+                console.log(data);
+                $('table').find('tr:gt(0)').remove();
+                $.each(data, (index, value) => {
+                        $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                })
+            })
         })
-        
     </script>
-    
+
 </body>
+
 </html>
