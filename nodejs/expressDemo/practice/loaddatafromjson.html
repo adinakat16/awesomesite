@@ -11,9 +11,10 @@
         .inlineblock {
             display: inline-block;
         }
-        #editentry{
-            position:absolute;
-            top:0;
+
+        #editentry {
+            position: absolute;
+            top: 0;
         }
     </style>
 </head>
@@ -21,7 +22,7 @@
 <body style="position: relative;">
     <div>
         <button id='getdata'>get data</button>
-        <input type="text" id="name" name="name"><button type="submit" id="filter">Filter it</button>
+        <input type="text" id="name" name="name" placeholder="Name (case sensitive)"><button type="submit" id="filter">Filter it</button>
     </div>
     <div class="inlineblock">
         <table id='table1' border='1'>
@@ -33,22 +34,22 @@
             <th>option</th>
         </table>
     </div>
-    <div class="inlineblock" style="position:absolute; top: 20px; display: none;">
+    <div class="inlineblock editentry" style="position:absolute; top: 20px; margin-left: 20px; display: none;">
         <table id='editentry'>
             <tr>
-                <br><span id="txtid"></span>
+                <br><span id="txtid"></span><br>
                 <input id="txtfirstname" placeholder="firstname" type="text">
                 <input id="txtlastname" placeholder="lastname" type="text"><br>
                 <input id="txtemail" placeholder="email" type="email">
                 <input id="txtgender" placeholder="gender" type="text"><br>
-                <button type="submit">update</button>
+                <button type="submit" id='update'>update</button>
             </tr>
         </table>
     </div>
 
     <script>
         let rdata;
-        $('#getdata').click(() => {
+        $('#getdata').click(function sync() {
             $.get('/emp', (data) => {
                 //rdata = data;             //making it availbale globally
                 //will remove rows greater than 0 index so that entries won't be repeated again
@@ -56,7 +57,23 @@
                 //append each row in table
                 $.each(data, (index, value) => {
                     $('#table1').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
-                    $("a").attr('myid');
+                    $(".edit").click(function () {
+                        let eid = $(this).attr('myid');
+                        // console.log(eid)
+                        $.get('/emp', function (data) {
+                            var entry = data.find((e) => { return e.id == eid })
+                            $("div").show();
+                            $('#txtid').html(`${entry.id}`)
+                            $('#txtfirstname').val(`${entry.first_name}`)
+                            $('#txtlastname').val(`${entry.last_name}`)
+                            $('#txtemail').val(`${entry.email}`)
+                            $('#txtgender').val(`${entry.gender}`)
+                        })
+                    })
+                    $('#update').click(function () {
+                        $('div.editentry').hide();
+                        $.get('/update', { 'id': $('#txtid').text(), 'first_name': $('#txtfirstname').val(), 'last_name': $('#txtlastname').val(), 'email': $('#txtemail').val(), 'gender': $('#txtgender').val() })
+                    })
                 })
             });
         })
@@ -80,6 +97,19 @@
                 $('#table1').find('tr:gt(0)').remove();
                 $.each(data, (index, value) => {
                     $('#table1').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                    $(".edit").click(function () {
+                        let eid = $(this).attr('myid');
+                        // console.log(eid)
+                        $.get('/emp', function (data) {
+                            var entry = data.find((e) => { return e.id == eid })
+                            $("div").show();
+                            $('#txtid').html(`${entry.id}`)
+                            $('#txtfirstname').val(`${entry.first_name}`)
+                            $('#txtlastname').val(`${entry.last_name}`)
+                            $('#txtemail').val(`${entry.email}`)
+                            $('#txtgender').val(`${entry.gender}`)
+                        })
+                    })
                 })
             })
         })
