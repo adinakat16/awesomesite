@@ -1,0 +1,165 @@
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
+TypeError [ERR_INVALID_ARG_TYPE]: The "chunk" argument must be of type string or an instance of Buffer or Uint8Array. Received an instance of Array
+    at new NodeError (node:internal/errors:371:5)
+    at write_ (node:_http_outgoing:742:11)
+    at ServerResponse.end (node:_http_outgoing:855:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/practice/loaddatafromjson.js:61:9
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/layer.js:95:5)
+    at /mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/mnt/D4F807F9F807D91E/CDAC_DIoT/DIOT_WebDevolopment/part2/awesomesite/nodejs/expressDemo/node_modules/express/lib/router/index.js:341:12)
