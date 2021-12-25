@@ -70,7 +70,8 @@
                             $('#txtgender').val(`${entry.gender}`)
                         })
                     })
-                    $('#update').click(function () {
+                    $('#update').click(function (err) {
+                        if(err) throw err;
                         $('div.editentry').hide();
                         $.get('/update', { 'id': $('#txtid').text(), 'first_name': $('#txtfirstname').val(), 'last_name': $('#txtlastname').val(), 'email': $('#txtemail').val(), 'gender': $('#txtgender').val() })
                     })
