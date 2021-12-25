@@ -8,22 +8,24 @@ app.get('/e',(req,res)=>{
 })
 app.get('/emp',(req,res)=>{
     fs.readFile('empjson.json',(err,data)=>{
-        //console.table(JSON.parse(data));
-        res.send(data);
+        res.send(JSON.parse(data));
     })
 
 })
 app.get('/empname',(req,res)=>{
-    
+    //creating url string based on recieved request
     var myurl="localhost:1234"+req.url;
-    //console.log(myurl)
+    //convert in url and make query object
     var qdata=url.parse(myurl,true).query;
-    //console.log(qdata.name)
+    //extract name parameter value
     var qdatatofind=qdata.name;
+    //read source json file
     fs.readFile('empjson.json',(err,data)=>{
+        //conver from json array string to json object array
         data=JSON.parse(data);
+        // filter based on extracted parameter value
         data=data.filter((e)=>e.first_name.includes(qdatatofind));
-         console.log(data);
+        //send it back 
         res.send(data);
     })
 })

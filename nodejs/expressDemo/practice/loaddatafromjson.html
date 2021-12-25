@@ -7,40 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Employye data</title>
+    <style>
+        .inlineblock {
+            display: inline-block;
+        }
+        #editentry{
+            position:absolute;
+            top:0;
+        }
+    </style>
 </head>
 
-<body>
-    <button id='getdata'>get data</button>
-    <input type="text" id="name" name="name"><button type="submit" id="filter">Filter it</button>
-    <table border='1'>
-        <th>Id</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email</th>
-        <th>Gender</th>
-        <th>option</th>
-    </table>
-    <div></div>
+<body style="position: relative;">
+    <div>
+        <button id='getdata'>get data</button>
+        <input type="text" id="name" name="name"><button type="submit" id="filter">Filter it</button>
+    </div>
+    <div class="inlineblock">
+        <table id='table1' border='1'>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>option</th>
+        </table>
+    </div>
+    <div class="inlineblock" style="position:absolute; top: 20px; display: none;">
+        <table id='editentry'>
+            <tr>
+                <br><span id="txtid"></span>
+                <input id="txtfirstname" placeholder="firstname" type="text">
+                <input id="txtlastname" placeholder="lastname" type="text"><br>
+                <input id="txtemail" placeholder="email" type="email">
+                <input id="txtgender" placeholder="gender" type="text"><br>
+                <button type="submit">update</button>
+            </tr>
+        </table>
+    </div>
 
     <script>
         let rdata;
         $('#getdata').click(() => {
             $.get('/emp', (data) => {
-
-                data = JSON.parse(data); //convert string json to objectjson
-                rdata = data;             //making it availbale globally
-
-                //not to repeat data again while appending
-                //will remove rows greater than 0 index
-                $('table').find('tr:gt(0)').remove();
-
+                //rdata = data;             //making it availbale globally
+                //will remove rows greater than 0 index so that entries won't be repeated again
+                $('#table1').find('tr:gt(0)').remove();
                 //append each row in table
                 $.each(data, (index, value) => {
-                    $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                    $('#table1').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                    $("a").attr('myid');
                 })
             });
         })
         $('#filter').click(() => {
+
+            //---------------perform filtering locally
+
             // let filldata = rdata.filter(e => {
             //     return e.first_name.includes($('#name').val());
             // })
@@ -50,11 +73,13 @@
             // $.each(filldata, (index, value) => {
             //     $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
             // })
+
+            //-------------used to get data from server
             $.get("/empname", { name: $('#name').val() }).done(function (data) {
-                console.log(data);
-                $('table').find('tr:gt(0)').remove();
+                //updating table
+                $('#table1').find('tr:gt(0)').remove();
                 $.each(data, (index, value) => {
-                        $('table').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
+                    $('#table1').append(`<tr><td>${value.id}</td><td>${value.first_name}</td><td>${value.last_name}</td><td>${value.email}</td><td>${value.gender}</td><td><a class="edit" href="#" myid="${value.id}">edit</a></td></tr>`)
                 })
             })
         })
