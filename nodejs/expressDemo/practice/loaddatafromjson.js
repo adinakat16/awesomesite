@@ -58,7 +58,7 @@ app.get('/update', function (req, res) {
     updateddata[entryindex]=newentry;
     //rewrite the json file
     fs.writeFile('empjson.json',JSON.stringify(updateddata),function(){})
-    res.end(updateddata);
+    res.end();
 })
 app.listen(1234, (req, res) => {
     console.log("server is running on 1234 port......")
